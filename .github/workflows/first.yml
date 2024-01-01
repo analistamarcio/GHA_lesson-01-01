@@ -10,7 +10,7 @@ jobs:
       - name: Step one
       - uses: actions/checkout@v3
       - name: Step two
-    run: env | sort
+      - run: env | sort
 
   job2:
     name: Second job
@@ -19,4 +19,4 @@ jobs:
       - name: Step one
       - uses: actions/checkout@v3
       - name: Step two
-    run: 'Get-ChildItem Env: | Sort-Object name'
+      - run: 'Get-ChildItem Env: | Sort-Object name'
