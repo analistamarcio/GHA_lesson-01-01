@@ -5,7 +5,7 @@ on: push # on multiple events --> on: [push, pull_request]
 jobs:
   job1:
     name: First job
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     - name: Step one
      uses: actions/checkout@v3
     - name: Step two
@@ -13,7 +13,7 @@ jobs:
 
   job2:
     name: Second job
-    run-on: windows-latest
+    runs-on: windows-latest
     -name: Step one
      uses: actions/checkout@v3
     -name: Step two
