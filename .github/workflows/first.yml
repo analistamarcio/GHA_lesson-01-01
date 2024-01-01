@@ -1,6 +1,6 @@
 name: first
 
-on: push # on multiple events --> on: [push, pull_request]
+on: push
 
 jobs:
   # job name
