@@ -1,4 +1,4 @@
-name: first
+name: my-first-GHA-flow
 
 on: push # on multiple events --> on: [push, pull_request]
 
