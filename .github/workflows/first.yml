@@ -1,9 +1,9 @@
 name: first
 
-on: [push] # on multiple events --> on: [push, pull_request]
+on: push # on multiple events --> on: [push, pull_request]
 
 jobs:
-  job1:
+  myJobName01:
     name: First job
     runs-on: ubuntu-latest
     steps:
@@ -12,7 +12,7 @@ jobs:
     - name: Step two
     run: env | sort
 
-  job2:
+  myJobName2:
     name: Second job
     runs-on: windows-latest
     steps:
