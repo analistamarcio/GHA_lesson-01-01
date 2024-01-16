@@ -2,6 +2,9 @@ name: Environment tests
 
 on: [workflow_dispatch]
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
   runs-shell-commands:
     runs-on: ubuntu-latest
